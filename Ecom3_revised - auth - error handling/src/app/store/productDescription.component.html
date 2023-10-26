@@ -1,0 +1,27 @@
+<style>
+        .product-description{
+                width: 600px;
+                background-color: rgba(250, 235, 215, 0.285);
+                display: block;
+                margin: 100px auto;
+                padding: 50px;
+                border-radius: 20px;
+                box-shadow: 1px 1px 30px 1px rgba(128, 128, 128, 0.514);
+        }
+        span{
+                font-size: 20px;
+                margin: 10px 0;
+        }
+        p{
+                margin: 10px 0;
+        }
+        .cat{
+                margin: 10px 0;   
+        }
+</style>
+<div class="product-description">
+        <h1>{{product.name}} </h1>
+        <span class="badge badge-pill badge-primary">{{product.price}}$</span><br>
+        <span class="cat">Category : {{product.category}}</span>
+        <p>{{product.description}}</p>
+</div>

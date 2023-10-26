@@ -1,0 +1,37 @@
+<style>
+    .coupon-div{
+        width: 600px;
+        background-color: rgba(250, 235, 215, 0.285);
+        display: block;
+        margin: 100px auto;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 30px 1px rgba(128, 128, 128, 0.514);
+    }
+    .single-coupon{
+        width: 100%;
+        margin: 20px 0;
+        border: none;
+        padding: 20px;
+        transition: all .3s;
+        box-shadow: 1px 1px 10px 1px rgba(128, 128, 128, 0.514);
+        border-radius: 10px;
+    }
+    .single-coupon:hover{
+        transform: scale(1.05);
+        box-shadow: 1px 1px 15px 1px rgba(128, 128, 128, 0.514);
+    }
+    .single-coupon h3, .single-coupon p{
+        text-align: left;
+    }
+</style>
+
+<div class="coupon-div">
+    <h2>Click below to apply coupon</h2>
+    <button class="single-coupon" (click)="addDiscount()">
+        <h3>10% Discount</h3>
+        <p>10% discount on all products upto 100$</p>
+    </button>
+    <button class="btn btn-secondary" (click)="skipDiscount()">Skip Discount</button>
+</div>
+
